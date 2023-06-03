@@ -17,12 +17,12 @@ app.use('/api/questions', questions);
 //Handle production
 if(process.env.NODE_ENV === 'production'){
     //Static folder
-    app.use(express.static(__dirname + '/public/'));
+    app.use(express.static(__dirname + '/dist/'));
 
     //Handle SPA
     app.get(/.*/, (req, res) => {
         res.setHeader("Access-Control-Allow-Creditials", "true");
-        res.sendFile(__dirname + 'public/index.html')
+        res.sendFile(__dirname + 'dist/index.html')
     });
 }
 
