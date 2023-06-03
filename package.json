@@ -4,8 +4,8 @@
   "description": "Project for my portfolio",
   "author": "Anna Shchavelkova",
   "scripts": {
-    "dev": "nodemon server/index.js --watch server",
-    "start": "node server/index.js"
+    "dev": "nodemon index.js --watch server",
+    "start": "node index.js"
   },
   "main": "index.js",
   "dependencies": {
