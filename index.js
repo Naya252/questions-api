@@ -8,7 +8,7 @@ const app = express();
 
 //Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({credentials: true, origin: 'https://ask-me-x6q2.onrender.com'}));
 app.use(history());
 
 const questions = require('./routes/api/questions');
